@@ -1,0 +1,155 @@
+.x-large {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.large {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 1rem;
+}
+
+.lead {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+}
+
+.btn {
+  display: inline-block;
+  background-color: #f4f4f4;
+  color: #333;
+  font-size: 1rem;
+  padding: 0.4rem 1.3rem;
+  margin-right: 0.5rem;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+  cursor: pointer;
+  transition: all 0.2s ease-in;
+}
+.btn.btn-primary {
+  background-color: #1ca5ff;
+  color: #333;
+}
+.btn.btn-primary:hover {
+  background: #82cdff;
+  transform: scale(0.98);
+}
+.btn.btn-secondary {
+  background-color: #ff8f00;
+  color: #fff;
+}
+.btn.btn-secondary:hover {
+  background: #995600;
+  transform: scale(0.98);
+}
+
+.bg-primary {
+  background-color: #1ca5ff;
+  color: #333;
+}
+.bg-secondary {
+  background-color: #ff8f00;
+  color: #fff;
+}
+.bg-dark {
+  background-color: #343a40;
+  color: #fff;
+}
+.bg-light {
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.dark-overlay {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #fff;
+  color: #333;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+  color: #1ca5ff;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.7rem 2rem;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  width: 100%;
+  border-bottom: 1px solid #1ca5ff;
+  opacity: 0.9;
+  transition: all 0.2s ease-in;
+}
+.navbar ul {
+  display: flex;
+}
+.navbar a {
+  color: #fff;
+  padding: 0.45rem;
+  margin: 0 0.25rem;
+}
+.navbar a:hover {
+  color: #1ca5ff;
+}
+
+.landing {
+  position: relative;
+  height: 100vh;
+  background: url(../img/showcase.jpeg) center center/cover;
+}
+.landing-inner {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: auto;
+  width: 80%;
+  color: #fff;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+  .x-large {
+    font-size: 2.5rem;
+  }
+  .lead {
+    font-size: 1rem;
+  }
+}
